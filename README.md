@@ -1,40 +1,40 @@
 # 🩺 MedCarePro — Sistema di Gestione Appuntamenti Medici
 
-**MedCarePro** è una web app realizzata in **PHP puro** per la gestione di appuntamenti in uno studio medico.  
-Progettato per offrire un’esperienza intuitiva sia per pazienti che per amministratori, il sistema include funzionalità di login multiutente, calendario settimanale e notifiche dinamiche.
+**MedCarePro** è una web app realizzata in **PHP puro** per la gestione degli appuntamenti in uno studio medico.  
+Progettata per offrire un’esperienza semplice e professionale sia per pazienti che per amministratori, include login multiutente, calendario settimanale interattivo e gestione centralizzata delle prenotazioni.
 
 ## 📌 Contesto del progetto
 
-Il progetto nasce con l’obiettivo di simulare un’applicazione professionale per studi medici, sviluppata **senza framework** per comprendere e padroneggiare appieno il funzionamento di un’app PHP da zero.
+Il progetto nasce con l’obiettivo di simulare un’applicazione reale per studi medici, sviluppata **senza framework** per comprendere e padroneggiare appieno il funzionamento di un'app PHP da zero, lavorando su sessioni, ruoli, validazioni, UI responsive e logiche back-end.
 
 🔧 Tecnologie utilizzate:
 - PHP puro (senza framework)
 - MySQL / MariaDB
 - HTML5 / CSS3 moderno
-- JavaScript (solo vanilla)
-- FullCalendar.js per la visualizzazione del calendario
+- JavaScript (vanilla)
+- FullCalendar.js per il calendario
 
 ## 👥 Ruoli supportati
 
 - **Cliente (Paziente)**:
   - Può registrarsi, accedere, prenotare appuntamenti.
-  - Visualizza lo storico delle richieste (con stato: confermato, in attesa, rifiutato).
-  - Riceve feedback immediati.
+  - Visualizza lo storico delle richieste con stato aggiornato (confermato, in attesa, rifiutato).
+  - Riceve feedback immediato dal sistema.
 
 - **Admin (Segreteria / Studio)**:
-  - Accede al **pannello di controllo**.
-  - Gestisce e approva o rifiuta le richieste dei pazienti.
-  - Visualizza il calendario settimanale con gli appuntamenti confermati.
+  - Accede a un pannello di controllo.
+  - Gestisce le richieste ricevute dai pazienti.
+  - Approva, modifica o rifiuta le prenotazioni.
+  - Visualizza il calendario settimanale con tutti gli appuntamenti confermati.
 
 ## ⚙️ Funzionalità principali
 
-- 🔐 Login sicuro con sessione attiva e controllo del ruolo
-- 🗓️ Prenotazione appuntamenti (evita sovrapposizioni)
-- 📬 Notifiche automatiche all’utente sullo stato della prenotazione
-- 📅 Calendario interattivo per l’admin con visuale settimanale (FullCalendar)
-- 📱 Interfaccia **responsive** e accessibile anche da mobile
-- ✅ Interazione semplificata: l’utente accede in pochi click
-
+- 🔐 Login sicuro con sessioni e gestione dei ruoli
+- 🗓️ Prenotazione appuntamenti con verifica di disponibilità
+- 📬 Notifiche in tempo reale per conferme e rifiuti
+- 📅 Calendario interattivo lato admin con FullCalendar.js
+- 📱 Interfaccia moderna e completamente responsive
+- ✅ Navigazione fluida con feedback visivi ed esperienza ottimizzata
 
 ## 🛠️ Installazione locale
 
@@ -42,17 +42,25 @@ Il progetto nasce con l’obiettivo di simulare un’applicazione professionale 
 
 ```bash
 git clone https://github.com/tuo-username/MedCarePro.git
+```
 
-2. Sposta la cartella nel tuo ambiente locale (es. htdocs di XAMPP)
+2. Sposta la cartella nel tuo ambiente locale (es. `htdocs` di XAMPP)
 
-3. Crea un database medcarepro e importa il file SQL:
+3. Crea un database `medcarepro` e importa il file SQL:
 
--- Apri phpMyAdmin e importa il file database/medcarepro.sql
+- Apri phpMyAdmin
+- Clicca su "Importa"
+- Seleziona `database/medcarepro.sql` e conferma
 
-4. Avvia il server locale e accedi a:
+4. Avvia il server locale e visita:
 
+```bash
 http://localhost/MedCarePro/public/index.php
+```
 
-🧠 Autore
-Realizzato con passione da Claudio Maldera
-🧪 Progetto didattico per esercitazione su PHP puro, UI moderna e gestione utenti realistica.
+---
+
+## 🧠 Autore
+
+Realizzato con passione da **Claudio Maldera**  
+🧪 Progetto didattico per approfondire lo sviluppo in PHP puro, la gestione utenti e la creazione di interfacce moderne accessibili.
